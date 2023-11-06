@@ -75,6 +75,7 @@ function UserManagement() {
     );
     setUsers(updatedUsers);
     setSelectedUsers([]);
+    setCurrentPage(1);
   };
 
   const handleFilterChange = (event) => {
