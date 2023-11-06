@@ -1,38 +1,148 @@
-.App {
-  text-align: center;
+h1 {
+    margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: #fff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search-bar {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin: 25px 0;
+    position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.pagination button {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 5px;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pagination button.active {
+    border: 1px solid #0056b3;
+    color: #0056b3;
+    background-color: white;
+}
+
+.delete {
+    position: absolute;
+    left: 0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table tr{
+    height: 45px;
+}
+
+th,
+td {
+    border-bottom: 1px solid #ccc;
+    text-align: left;
+}
+
+tr.selected {
+    background-color: #f0f0f0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+td .edit{
+    width: 90%;
+}
+
+td svg {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.red {
+    margin-left: 1rem;
+    color: red;
+}
+
+.save {
+    font-size: 1.6rem;
+    color: green;
+    margin-right: 1rem;
+}
+
+.cancle {
+    font-size: 1rem;
+    color: red;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        padding: 1rem;
+    }
+
+    th,
+    td {
+        font-size: 0.8rem;
+    }
+    .pagination {
+        margin: 10px 0;
+        position: static;
+    }
+    .delete{
+        position: static;
+    }
+    .pagination button {
+        font-size: 0.6rem;
+        padding: 6px 10px;
+    }
+    .save {
+        font-size: 1.2rem;
+    }
+    
+    .cancle {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .search-bar {
+        font-size: 0.8rem;
+    }
+    .hide{
+        display: none;
+    }
+    th,
+    td {
+        font-size: 0.7rem;
+    }
+    .edit{
+        font-size: 0.7rem;
+    }
+    .save {
+        margin-right: 0.6rem;
+    }
+    .red {
+        margin-left: 0.6rem;
+    }
+    .pagination button {
+        font-size: 0.5rem;
+        padding: 5px 8px;
+    }
 }
