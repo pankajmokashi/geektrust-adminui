@@ -4,7 +4,7 @@ import Table from "./Components/Table";
 import Pagination from "./Components/Pagination";
 import "./App.css";
 
-function UserManagement() {
+function App() {
   const [users, setUsers] = useState([]);
   const [selectedUsers, setSelectedUsers] = useState([]);
   const [currentPage, setCurrentPage] = useState(1);
@@ -125,4 +125,4 @@ function UserManagement() {
   );
 }
 
-export default UserManagement;
+export default App;
