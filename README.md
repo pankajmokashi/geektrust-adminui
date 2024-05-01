@@ -9,7 +9,7 @@
 - You should be able to select one or more rows. A selected row is highlighted with a grayish background color. Multiple selected rows can be deleted at once using the 'Delete Selected' button at the bottom left.
 - Checkbox on the top left is a shortcut to select or deselect all displayed rows. This should only apply to the ten rows displayed in the current page, and not all 50 rows.
 
-### Instructions to Pass Automated Correctness Check
+### Instructions :
 - Search box placeholder text should start with Search.
 - Search icon/button should have class as search-icon OR trigger search on ENTER.
 - Action element must be a button with a specific class name like edit, delete, save.
